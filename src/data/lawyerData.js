@@ -1,0 +1,42 @@
+export const lawyers = [
+	{
+		id: "001",
+		name: "Karan Mahajan",
+		speciality: "Divorce",
+		availability: "10-16",
+		cost: 500,
+		appointmentSlots: 6,
+	},
+	{
+		id: "002",
+		name: "Shyam Sunder",
+		speciality: "Criminal",
+		availability: "10-15",
+		cost: 700,
+		appointmentSlots: 5,
+	},
+	{
+		id: "003",
+		name: "Rita Khanna",
+		speciality: "Tax",
+		availability: "10-12",
+		cost: 900,
+		appointmentSlots: 2,
+	},
+	{
+		id: "004",
+		name: "Nilesh Kumar",
+		speciality: "Property",
+		availability: "9-16",
+		cost: 600,
+		appointmentSlots: 7,
+	},
+	{
+		id: "005",
+		name: "Arjun Singh",
+		speciality: "Corporate",
+		availability: "9-17",
+		cost: 750,
+		appointmentSlots: 8,
+	},
+];

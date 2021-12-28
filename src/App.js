@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import BookAppointment from "./component/bookAppointment";
+import AppointmentHistory from "./component/appointmentHistory";
+import NavBar from "./component/navBar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="container-fluid">
+			<div className="row">
+				<div className="col p-0">
+					<NavBar />
+					<Routes>
+						<Route path="/" element={<BookAppointment />} />
+						<Route
+							path="/history"
+							element={<AppointmentHistory />}
+						/>
+					</Routes>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default App;
